@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Todo Demo</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>PC Todo Demo</h1>
+    </div>
+    <div class="container">
+      <form class="form">
+        <input
+          type="text"
+          placeholder="Enter Todo"
+          name="todo"
+          required
+          minlength="3"
+        />
+        <input
+          type="text"
+          placeholder="Enter description"
+          name="description"
+          required
+          minlength="3"
+        />
+        <label for="completed">
+          <input type="checkbox" value="on" name="completed" />
+          completed
+        </label>
+        <button>Add</button>
+      </form>
+
+      <button type="button" class="btn-show">Show form</button>
+
+      <div class="todos-wrapper">
+        <div class="todos-container">
+          <h4>Incomplete todos</h4>
+          <ul id="incomplete"></ul>
+        </div>
+        <div class="todos-container">
+          <h4>Completed todos</h4>
+          <ul id="completed"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/js/index.js" type="module"></script>
+</html>
